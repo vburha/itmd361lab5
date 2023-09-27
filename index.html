@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Main Page</title>
-    <meta charset="utf-8">
-	<link href='http://fonts.googleapis.com/css?family=Devonshire' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Main Page</title>
+  <link href='http://fonts.googleapis.com/css?family=Devonshire' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
   
-  <body class="pageLayout">
+<body>
+  <div id="page-wrapper">
     <header id="header">
 	  <a id="logo" href="index.html"><img src="logoHK.png" alt="The Hello Kitty logo, the cartoon face of a white cat with a red bow on her right ear"></a>
 	  <h1>My Demo Site</h1>
@@ -26,7 +27,8 @@
     </nav>
 	
     <main id="content-wrapper">
-      <h2><strong>This is our h2 Tag</strong></h2>
+      <div id="main-content">
+        <h2><strong>This is our h2 Tag</strong></h2>
         <img class="imageR" src="logoATLA.png" alt="The Avatar: The Last Airbender logo, the title of the show written underneath the orange and white Nickelodeon logo">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
@@ -45,22 +47,23 @@
 		  <li>List 3</li>
 		  <li>List 4</li>
 		</ul>
-        <iframe width="400" height="300" src="https://www.youtube.com/embed/-jn9aaNn8_I?si=D1HhLAWQ5awY9BfU frameborder="0" allowfullscreen></iframe>
+        <div id="center">
+          <iframe width="400" height="300" src="https://www.youtube.com/embed/-jn9aaNn8_I?si=D1HhLAWQ5awY9BfU frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
       <aside id="side-content">
         <h3>Interesting Articles</h3>
-          <ol id="news">
-            <li><a href="#">Article 1</a></li>
-              <p>Preview of very interesting article article</p>
-            <li><a href="#">Article 2</a></li>
-              <p>Preview of very interesting article article</p>
-            <li><a href="#">Article 3</a></li>
-              <p>Preview of very interesting article article</p>
-            <li><a href="#">Article 4</a></li>
-              <p>Preview of very interesting article article</p>
-          </ol>
+        <ol id="news">
+          <li><a href="#">Article 1</a><div><p>Preview of very interesting article article</p></div></li>
+          <li><a href="#">Article 2</a><div><p>Preview of very interesting article article</p></div></li>
+          <li><a href="#">Article 3</a><div><p>Preview of very interesting article article</p></div></li>
+          <li><a href="#">Article 4</a><div><p>Preview of very interesting article article</p></div></li>
+        </ol>
       </aside>
     </main>
 	
-    <footer id="footer">Footer Content is here</footer>
-  </body>
+    <footer id="footer">
+	  <p>Footer Content is here</p>
+	</footer>								   		 
+</body>
 </html>
